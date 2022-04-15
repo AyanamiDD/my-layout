@@ -114,7 +114,7 @@ export default {
     },
     getNotifyData() {
       requestGet({
-        url: "/getIllegalVehicle",
+        url: "/illegal/getIllegalVehicle",
       }).then((res) => {
         this.notifyData = res.data.msg
         this.notifyNum = '('+ res.data.msg.length +')'
