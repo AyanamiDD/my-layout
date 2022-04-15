@@ -17,7 +17,7 @@
     >
       <el-tab-pane
         v-for="item of state.visitedView"
-        :key="item.path"
+        :key="item.path+Math.random()*99999+20"
         :label="item.meta.title"
         :name="item.fullPath"
         :closable="!isAffix(item)"
